@@ -7,7 +7,8 @@
             "title": "Shop name",
             "type": "array",
             "description": "With country suffix.",
-            "editor": "stringList"
+            "editor": "stringList",
+            "prefill": "Alza_cz"
         }
     },
     "required": ["shopName"]
