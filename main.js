@@ -23,7 +23,7 @@ Apify.main(async () => {
 
     // console.dir(JSON.parse(body));
     const data = JSON.parse(getBody);
-    const bucketData = data.find(i => i.name === `#0 ${shopName.shopName}`);
+    const bucketData = data.find(i => i.name.toLowerCase() === `#0 ${shopName.shopName.toLowerCase()}`);
     const bucketId = bucketData.id;
 
     // check if tranformation dashboard already exists, if yes, return id
